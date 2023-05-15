@@ -4,7 +4,19 @@ from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QVBo
 from PyQt5.QtGui import QPixmap
 from PIL import Image
 from PyQt5.QtGui import QImage
-#import your_machine_learning_module
+import PIL
+from PIL import Image
+import glob
+import numpy as np
+
+import random
+
+import matplotlib.pyplot as plt
+import tensorflow as tf
+from tensorflow.keras import layers,models
+from keras.preprocessing.image import ImageDataGenerator
+
+loaded_model = models.load_model('ModelGUIV1')
 
 class MainWindow(QMainWindow):
     def __init__(self):
